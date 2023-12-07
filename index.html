@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Book List Website</title>
+    <link rel="icon" href="images/book logo.png">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header class="head_bar">
+        <h1 class="head_bar__title">List Books</h1>
+    </header>
+    <main>
+        <section class="section1">
+            <section class="input_section">
+                <h2>Add New Book</h2>
+                <form id="inputBuku">
+                    <div class="input">
+                        <label for="inputBookTitle">Title</label>
+                        <input id="inputJudulBuku" type="text" required>
+                    </div>
+                    <div class="input">
+                        <label for="inputBookAuthor">Author</label>
+                        <input id="inputPenulisBuku" type="text" required>
+                    </div>
+                    <div class="input">
+                        <label for="inputBookYear">Year</label>
+                        <input id="inputTahun" type="number" required>
+                    </div>
+                    <div class="input_inline">
+                        <label for="inputBookIsComplete">Read</label>
+                        <input id="inputBukuSudahSelesai" type="checkbox">
+                    </div>
+                    <button id="bookSubmit" type="submit">Add New Book to BookShelf <span>Unread</span></button>
+                </form>
+            </section>
+            <img src="images/book stack.png" alt="book">
+        </section>
+        <section class="section2">
+            <section class="search_section">
+                <h2>Search Book</h2>
+                <form id="searchBook">
+                    <label for="searchBookTitle">Title</label>
+                    <input id="searchBookTitle" type="text">
+                    <button id="searchSubmit" type="submit">Search</button>
+                </form>
+            </section>
+            <section class="book_shelf">
+                <h2>Unread</h2>
+                <div id="incompleteBookshelfList" class="book_list">
+                </div>
+            </section>
+            <section class="book_shelf">
+                <h2>Read</h2>
+                <div id="completeBookshelfList" class="book_list">
+                </div>
+            </section>
+        </section>
+    </main>
+
+    <script src="js/data.js" type="text/javascript"></script>
+    <script src="js/dom.js" type="text/javascript"></script>
+    <script src="js/script.js" type="text/javascript"></script>
+</body>
+
+</html>

@@ -1,0 +1,192 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Montserrat:wght@500&family=Noto+Sans+JP:wght@500&family=Nunito:wght@500;600&family=Varela+Round&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body, input, button {
+    font-family: 'Lato', sans-serif;
+}
+
+body{
+    background-image: url(/images/table\ background.jpg);
+    background-size: cover;
+    background-position-x: right;
+}
+
+input, button {
+    font-size: 16px;
+}
+
+.head_bar__title {
+    padding: 20px;
+    border-radius: 40px;
+    margin: 20px 15% 0 15%;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #164863e0;
+    color: white;
+}
+
+.section1{
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.input_section {
+    background: #9bbec8dc;
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    padding: 16px;
+    border-radius: 10px;
+}
+
+.input_section > h2 {
+    text-align: center;
+    color: rgb(58, 19, 83);
+}
+
+.input_section > form > .input {
+    margin: 8px 0;
+}
+
+.input_section > form > button {
+    background-color: rgb(5, 26, 144);
+    color: white;
+    border: 0;
+    border-radius: 5px;
+    display: block;
+    width: 100%;
+    padding: 8px;
+    cursor: pointer;
+}
+
+.input_section > form > button > span {
+    font-weight: bold;
+}
+
+.input_section > form > .input > input {
+    display: block;
+    width: 100%;
+    padding: 8px;
+    border-radius: 5px;
+}
+
+.input_section > form > .input > label {
+    color: rgb(58, 19, 83);
+    font-weight: bold;
+}
+
+.input_section > form > .input_inline {
+    margin: 12px 0;
+    display: flex;
+    align-items: center;
+}
+
+.input_section > form > .input_inline > label {
+    color: rgb(58, 19, 83);
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+.section2{
+    background: #427d9dde;
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.search_section {
+    background: #9bbec8cc;
+    width: 100%;
+    margin: 16px 0;
+    display: flex;
+    flex-direction: column;
+    padding: 16px;
+    border-radius: 10px;
+}
+
+.search_section > h2 {
+    color: rgb(58, 19, 83);
+}
+
+.search_section > form {
+    padding: 16px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto 1fr 0.5fr;
+    grid-gap: 10px;
+}
+
+.search_section > form > label {
+    display: flex;
+    align-items: center;
+}
+
+.search_section > form > input {
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.search_section > form > button {
+    background-color: rgb(5, 26, 144);
+    color: white;
+    border: 0;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.book_shelf {
+    background: #9BBEC8;
+    width: 45%;
+    height: 500px;
+    margin: 16px 0 0 0;
+    padding: 16px;
+    border-radius: 10px;
+}
+
+.book_shelf > h2 {
+    color: rgb(58, 19, 83);
+}
+
+.book_shelf > .book_list {
+    padding: 16px;
+}
+
+.book_shelf > .book_list > .book_item {
+    padding: 16px 30px;
+    border: 5px solid rgb(102, 144, 155);
+    background: rgba(255,255,255,0.7);
+    border-radius: 5px;
+    margin: 10px 0;
+}
+
+.book_shelf > .book_list > .book_item > h3, .book_shelf > .book_list > .book_item > p {
+    margin: 8px 0;
+}
+
+.book_shelf > .book_list > .book_item > .action > button {
+    border: 0;
+    padding: 5px;
+    margin: 0 5px 0 0;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.book_shelf > .book_list > .book_item > .action > .green {
+    background-color: rgb(192, 174, 13);
+    color: white;
+}
+
+.book_shelf > .book_list > .book_item > .action > .red {
+    background-color: rgb(190, 7, 7);
+    color: white;
+}
